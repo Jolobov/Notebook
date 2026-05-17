@@ -1,3 +1,29 @@
+#### Обновление операционной системы RouterOS
+```fold title:"Update RouterOS"
+/system/package/update/
+check-for-updates
+install
+```
+#### Обновление загрузчика RouterBOOT
+```fold title:"Update RouterBOOT"
+/system/routerboard/
+upgrade
+
+/system/
+reboot
+```
+#### Сброс настроек
+```fold title:"Reset configuration"
+/system/
+reset-configuration no-defaults=yes
+```
+
+
+
+
+
+
+
 ``` 
 /user/set [find name=admin] password=password
 
