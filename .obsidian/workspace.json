@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Vault/MikroTik/Настройка с нуля.md",
+                "file": "Master Vault/MikroTik/Настройка точки доступа Wi-Fi.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Настройка с нуля"
+              "title": "Настройка точки доступа Wi-Fi"
             }
           }
         ]
@@ -207,12 +207,16 @@
   },
   "active": "9ef7bcc67c1b33fa",
   "lastOpenFiles": [
-    "Pasted image 20260516174748.png",
     "Master Vault/MikroTik/Настройка с нуля.md",
+    "Master Vault/MikroTik/Настройка с нуля. Конфигурация.md",
+    "Master Vault/MikroTik/Настройка точки доступа Wi-Fi.md",
+    "Master Vault/MikroTik/Настройка точки доступа Wi-Fi. Конфигурация wifi-qcom.md",
+    "Master Vault/MikroTik/Настройка точки доступа Wi-Fi. Конфигурация wireless.md",
+    "Master Vault/Image/Subnet.pdf",
+    "Pasted image 20260516174748.png",
     "Pasted image 20260516174759.png",
     "Блокнот.md",
     "Master Vault/MikroTik",
-    "Master Vault/Image/Subnet.pdf",
     "README.md",
     "Calendar",
     "Master Vault/Image",
