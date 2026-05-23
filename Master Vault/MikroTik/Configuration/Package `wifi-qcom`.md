@@ -1,0 +1,99 @@
+``` 
+
+/interface/wifi/
+set [ find default-name=wifi2 ] channel.band=2ghz-ax .frequency=2412-2472 \
+   .reselect-interval=2h..4h .width=20mhz configuration.country=Superchannel \
+   .hw-protection-mode=rts-cts .mode=ap .ssid=GW-2 .tx-power=16 disabled=no name=wlan-2GHz \
+   security.authentication-types=wpa2-psk,wpa3-psk .passphrase=password \
+   .wps=disable
+set [ find default-name=wifi1 ] channel.band=5ghz-ax .frequency=\
+   5180-5240,5260-5320,5660-5720,5745-5825 .reselect-interval=2h..4h \
+   .width=20/40mhz configuration.country=Superchannel .hw-protection-mode=rts-cts .mode=ap .ssid=GW-5 \
+   .tx-power=18 disabled=no name=wlan-5GHz \
+   security.authentication-types=wpa2-psk,wpa3-psk .passphrase=password .wps=disable
+
+/interface/list/
+add name=LAN
+
+/ip/pool/
+add name=dhcp-lan-pool ranges=192.168.100.101-192.168.100.199
+
+/interface/bridge/port/
+add bridge=bridge-LAN interface=ether2
+add bridge=bridge-LAN interface=ether3
+add bridge=bridge-LAN interface=ether4
+add bridge=bridge-LAN interface=ether5
+add bridge=bridge-LAN interface=wlan-5GHz
+add bridge=bridge-LAN interface=wlan-2GHz
+
+/ip/neighbor/discovery-settings/
+set discover-interface-list=LAN
+
+/ipv6/settings/
+set disable-ipv6=yes
+
+/interface/list/member/
+add interface=bridge-LAN list=LAN
+
+/ip/address/
+add address=192.168.100.1/24 interface=bridge-LAN network=192.168.100.0
+add address=100.64.111.100/24 interface=ether1-WAN1 network=100.64.111.0
+
+/ip/dhcp-server/
+add address-pool=dhcp-lan-pool interface=bridge-LAN lease-time=3d name=\
+   dhcp-lan
+
+/ip/dhcp-server/network/
+add address=192.168.100.0/24 dns-server=192.168.100.1 gateway=192.168.100.1
+
+/ip/dns/
+set allow-remote-requests=yes servers=77.88.8.8,77.88.8.1
+
+/ip/firewall/filter/
+add action=accept chain=input comment="accept established related" \
+   connection-state=established,related
+add action=drop chain=input comment="drop invalid" connection-state=invalid
+add action=accept chain=input comment="accept ICMP" protocol=icmp
+add action=drop chain=input comment="drop all from not LAN" in-interface=\
+   !bridge-LAN
+add action=accept chain=forward comment="accept established related" \
+   connection-state=established,related
+add action=drop chain=forward comment="drop invalid" connection-state=invalid
+add action=drop chain=forward comment="drop all from WAN" \
+   connection-nat-state=!dstnat in-interface=ether1-WAN1
+
+/ip/firewall/nat/
+add action=src-nat chain=srcnat out-interface=ether1-WAN1 to-addresses=\
+   100.64.111.100
+
+/ip/route/
+add disabled=no dst-address=0.0.0.0/0 gateway=100.64.111.1
+
+/ip/service/
+set ftp disabled=yes
+set telnet disabled=yes
+set www disabled=yes
+set api disabled=yes
+set api-ssl disabled=yes
+
+/system/clock/
+set time-zone-autodetect=no time-zone-name=Europe/Moscow
+
+/system/identity/
+set name=GW
+
+/system/ntp/client/
+set enabled=yes
+
+/system/ntp/client/servers/
+add address=ru.pool.ntp.org
+
+/tool/mac-server/
+set allowed-interface-list=LAN
+
+/tool/mac-server/mac-winbox/
+set allowed-interface-list=LAN
+
+/tool/mac-server/ping/
+set enabled=no
+```

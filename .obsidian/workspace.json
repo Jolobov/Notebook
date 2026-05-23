@@ -13,30 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Vault/MikroTik/Configuration/Default.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Default"
-            }
-          },
-          {
-            "id": "533e6280c7f397af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Master Vault/MikroTik/Настройка Wi-Fi на беспроводном пакете wireless.md",
                 "mode": "source",
                 "source": false,
@@ -53,6 +29,30 @@
               },
               "icon": "lucide-file",
               "title": "Настройка Wi-Fi на беспроводном пакете wireless"
+            }
+          },
+          {
+            "id": "533e6280c7f397af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Master Vault/MikroTik/Настройка с нуля.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Настройка с нуля"
             }
           }
         ]
@@ -231,13 +231,14 @@
   },
   "active": "28037cdc43e80677",
   "lastOpenFiles": [
-    "Master Vault/MikroTik/Configuration/Package `wifi-qcom`.md",
+    "Master Vault/MikroTik/Настройка Wi-Fi на беспроводных пакетах wifi-qcom и wifi-qcom-ac.md",
+    "Master Vault/MikroTik/Настройка Wi-Fi на беспроводном пакете wireless.md",
+    "Master Vault/MikroTik/Настройка точки доступа Wi-Fi.md",
+    "Master Vault/MikroTik/Настройка с нуля.md",
     "Master Vault/MikroTik/Configuration/Default.md",
     "Master Vault/MikroTik/Configuration/Package `wireless`.md",
-    "Master Vault/MikroTik/Настройка точки доступа Wi-Fi.md",
-    "Master Vault/MikroTik/Настройка Wi-Fi на беспроводном пакете wireless.md",
-    "Master Vault/MikroTik/Настройка с нуля.md",
-    "Master Vault/MikroTik/Настройка Wi-Fi на беспроводных пакетах wifi-qcom и wifi-qcom-ac.md",
+    "Master Vault/MikroTik/Configuration/Pre-configuration.md",
+    "Master Vault/MikroTik/Configuration/Package `wifi-qcom`.md",
     "Master Vault/MikroTik/Настройка с нуля. Конфигурация.md",
     "Master Vault/MikroTik/Настройка точки доступа Wi-Fi. Конфигурация wifi-qcom.md",
     "Master Vault/MikroTik/Настройка точки доступа Wi-Fi. Конфигурация wireless.md",
