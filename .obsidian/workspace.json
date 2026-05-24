@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "cbaa43cd16439885",
+        "id": "146a54c8a889329d",
         "type": "tabs",
         "children": [
           {
-            "id": "28037cdc43e80677",
+            "id": "8863cd553e078a3c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Vault/MikroTik/Настройка Wi-Fi на беспроводном пакете wireless.md",
+                "file": "Master Vault/MikroTik/Configuration/Default.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,11 +28,41 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Настройка Wi-Fi на беспроводном пакете wireless"
+              "title": "Default"
             }
           },
           {
-            "id": "533e6280c7f397af",
+            "id": "f8629c5dcd3ebf69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Master Vault/MikroTik/Configuration/Pre-configuration.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Pre-configuration"
+            }
+          }
+        ]
+      },
+      {
+        "id": "2c12e821b1e87789",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "baaf24bd62c20f93",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -229,16 +259,16 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "28037cdc43e80677",
+  "active": "8863cd553e078a3c",
   "lastOpenFiles": [
-    "Master Vault/MikroTik/Настройка Wi-Fi на беспроводных пакетах wifi-qcom и wifi-qcom-ac.md",
-    "Master Vault/MikroTik/Настройка Wi-Fi на беспроводном пакете wireless.md",
-    "Master Vault/MikroTik/Настройка точки доступа Wi-Fi.md",
     "Master Vault/MikroTik/Настройка с нуля.md",
     "Master Vault/MikroTik/Configuration/Default.md",
-    "Master Vault/MikroTik/Configuration/Package `wireless`.md",
     "Master Vault/MikroTik/Configuration/Pre-configuration.md",
+    "Master Vault/MikroTik/Настройка Wi-Fi на беспроводном пакете wireless.md",
     "Master Vault/MikroTik/Configuration/Package `wifi-qcom`.md",
+    "Master Vault/MikroTik/Настройка Wi-Fi на беспроводных пакетах wifi-qcom и wifi-qcom-ac.md",
+    "Master Vault/MikroTik/Настройка точки доступа Wi-Fi.md",
+    "Master Vault/MikroTik/Configuration/Package `wireless`.md",
     "Master Vault/MikroTik/Настройка с нуля. Конфигурация.md",
     "Master Vault/MikroTik/Настройка точки доступа Wi-Fi. Конфигурация wifi-qcom.md",
     "Master Vault/MikroTik/Настройка точки доступа Wi-Fi. Конфигурация wireless.md",
